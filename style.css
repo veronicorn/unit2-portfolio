@@ -1,0 +1,110 @@
+body {
+    height: 98vh;
+    background-image: url("assets/bckgrnd.png");
+    text-align: center;
+}
+
+#profilepic {
+    border: #2c5fa8 3px solid;
+    width:200px;
+    border-radius:100px;
+    margin-top: 50px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 3, 1fr;
+    grid-gap: 25px;
+    margin: 35px 50px;
+}
+
+nav {
+    padding: 30px;
+    align-items: center;
+}
+
+.icon {
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #333333;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 2;
+    margin: 30px 30px 0px 30px;
+}
+
+#portfolio {
+    background-color: rgba(150, 150, 150, 0.6);
+    padding: 25px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#portfolioheader {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.class {
+    margin: 30px;
+}
+
+footer {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+    border-top: #ffffff solid 2px;
+}
+
+@media only screen and (min-width: 600px){
+
+    body {
+        text-align: left;
+        height: 100vh;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+
+    h1, h2 {
+        margin-left: 30px;
+    }
+    
+    p {
+        width: 600px;
+        margin-left: 30px;
+    }
+    
+    #profilepic {
+        position: absolute;
+        top: 175px;
+        right: 50px;
+    }
+    
+    #gallery {
+        grid-template-columns: auto auto auto;
+        grid-gap: 25px;
+    }
